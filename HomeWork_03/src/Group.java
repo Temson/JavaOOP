@@ -42,7 +42,7 @@ public class Group {
 
     }
 
-    public Student searchBySurname(String surname) throws StudentNotFound{
+    public Student searchBySurname(String surname) throws StudentNotFoundException {
         for (Student student: students) {
             if (student != null && student.getSurname().equals(surname)) {
                 String res = "Search result by request " + "'" + surname + "'" + ": " + "[" + student + "]" + '\n';
@@ -50,7 +50,7 @@ public class Group {
                 return student;
             }
         }
-        throw new StudentNotFound();
+        throw new StudentNotFoundException();
     }
 
     private void sortGroup() {

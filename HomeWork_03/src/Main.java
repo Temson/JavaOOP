@@ -1,5 +1,5 @@
 public class Main {
-    public static void main(String[] args) throws FullGroupException, StudentNotFound {
+    public static void main(String[] args) throws FullGroupException, StudentNotFoundException {
 
 
         Student stud1 = new Student("Martin", "McFly", 18, Gender.MALE, 1000001);
