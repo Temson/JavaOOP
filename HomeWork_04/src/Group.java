@@ -89,17 +89,17 @@ public class Group implements Voencom {
         return "";
     }
 
-    public Student[] getVoencom(){
+    public Student[] getRecruter(){
         int n = 0;
         for (Student student : students) {
-            if (student != null && student.getAge() >= 18 && student.getAge() < 27) {
-                    n++;
+            if (student != null && student.getAge() >= 18 && student.getAge() < 27 && student.getSex() == Gender.MALE) {
+                    n += 1;
             }
         }
         Student[] recuits = new Student[n];
         int i = 0;
         for (Student student : this.students) {
-            if (student != null && student.getSex() == Gender.MALE) {
+            if (student != null && student.getAge() >= 18 && student.getAge() < 27 && student.getSex() == Gender.MALE) {
                 recuits[i++] = student;
             }
         }
