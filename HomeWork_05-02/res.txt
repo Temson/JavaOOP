@@ -1,0 +1,4 @@
+pen
+car
+bus
+store
