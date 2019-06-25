@@ -35,7 +35,7 @@ public class Student extends Human implements Serializable {
         return ((getName() != other.getName()) || (getSurname() != other.getSurname()) ||
                 (getAge() != other.getAge()) || (getSex() != other.getSex()) || (studentId != other.studentId));
     }
-
+/*
     @Override
     public int hashCode() {
         final int prime = 31;
@@ -49,11 +49,12 @@ public class Student extends Human implements Serializable {
     }
 
 
+ */
 
-/*    @Override
+
+   @Override
     public int hashCode() {
         return Objects.hash(super.hashCode(), studentId);
     }
 
- */
 }

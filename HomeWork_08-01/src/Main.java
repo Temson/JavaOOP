@@ -43,7 +43,7 @@ public class Main {
         gr.searchBySurname("Dawson");
 
 
-//        gr.delStudent(1000007);
+        gr.delStudent(1000007);
 
         System.out.println(gr);
 
